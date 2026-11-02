@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politics, Cricket, Bollywood — Who's Trending</title>
+<meta name="description" content="Trending characters in Indian politics, cricket and Bollywood — with short, sourced event timelines.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <h1>Politics, Cricket, Bollywood</h1>
+  <p class="tagline">Who's trending — and what they did. Short, sourced, in English.</p>
+</header>
+
+<nav class="tabs" id="tabs" aria-label="Sections"></nav>
+
+<main>
+  <section id="shelf-view">
+    <p class="section-intro" id="section-intro"></p>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section id="person-view" hidden>
+    <button class="back" id="back-btn" type="button">&larr; All characters</button>
+    <div class="person-head">
+      <div class="avatar big" id="person-avatar"></div>
+      <div>
+        <h2 id="person-name"></h2>
+        <p class="role" id="person-role"></p>
+        <p class="why" id="person-why"></p>
+      </div>
+    </div>
+    <h3 class="timeline-title">Timeline</h3>
+    <ol class="timeline" id="timeline"></ol>
+  </section>
+</main>
+
+<footer>
+  <p>Seed data as of <span id="updated"></span>. Every event links to its source. More characters are added as they trend.</p>
+  <p class="note">Trending order is editorial for v1. Allegations are reported as claims, with the other side's response alongside.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
